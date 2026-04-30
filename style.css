@@ -70,6 +70,16 @@ p {
 }
 
 /* =========================
+   BASE IMAGE STYLE
+========================= */
+img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 12px;
+  display: block;
+}
+
+/* =========================
    GRID SYSTEM
 ========================= */
 .grid,
@@ -126,10 +136,11 @@ p {
 }
 
 /* =========================
-   INTRO / OUTRO (HOME)
+   GLOBAL INTRO / OUTRO
 ========================= */
-.intro,
-.outro {
+.page-intro,
+.quote,
+.intro {
   text-align: center;
   max-width: 800px;
   margin: auto;
@@ -137,8 +148,15 @@ p {
 }
 
 .outro {
+  text-align: center;
+  margin: 70px auto 0;
+  padding: 60px 25px;
+
   background: #E8DDCF;
-  border-radius: 14px;
+  border-radius: 16px;
+  max-width: 800px;
+
+  box-shadow: 0 8px 20px rgba(0,0,0,0.08);
 }
 
 .cta-btn {
@@ -197,16 +215,6 @@ p {
   padding-left: 10px;
 }
 
-/* WRITTEN OUTRO */
-.written-outro {
-  text-align: center;
-  margin-top: 70px;
-  padding: 60px 25px;
-  background: #E8DDCF;
-  border-radius: 16px;
-  box-shadow: 0 8px 20px rgba(0,0,0,0.08);
-}
-
 /* =========================
    SEEN PAGE
 ========================= */
@@ -236,27 +244,20 @@ p {
   background: #A47148;
 }
 
-/* SEEN OUTRO */
 .seen-outro {
   text-align: center;
-  margin-top: 70px;
+  margin: 70px auto;
   padding: 60px 25px;
+
   background: #E8DDCF;
   border-radius: 16px;
   max-width: 800px;
-  margin: auto;
+
+  box-shadow: 0 8px 20px rgba(0,0,0,0.08);
 }
 
 /* =========================
-   BASE IMAGE STYLE
-========================= */
-img {
-  max-width: 100%;
-  height: auto;
-  border-radius: 12px;
-  display: block;
-}/* =========================
-   PROMPTS PAGE WRAPPER
+   PROMPTS PAGE
 ========================= */
 .prompts-page {
   max-width: 1000px;
@@ -265,9 +266,6 @@ img {
   text-align: center;
 }
 
-/* =========================
-   PROMPT GRID
-========================= */
 .prompt-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
@@ -275,19 +273,13 @@ img {
   margin-top: 40px;
 }
 
-/* =========================
-   PROMPT CARDS
-========================= */
 .prompt-card {
   background: #E8DDCF;
   padding: 25px;
   border-radius: 14px;
-
   box-shadow: 0 6px 15px rgba(0,0,0,0.08);
-
   transition: 0.3s ease;
   text-align: left;
-
   position: relative;
 }
 
@@ -295,26 +287,21 @@ img {
   transform: translateY(-6px);
 }
 
-/* accent line */
 .prompt-card::before {
   content: "";
   position: absolute;
   top: 18px;
   left: 20px;
-
   width: 40px;
   height: 3px;
   background: #A47148;
 }
 
-/* title */
 .prompt-card h2 {
   margin-top: 20px;
   color: #4E3B31;
-  font-family: "Playfair Display", serif;
 }
 
-/* text */
 .prompt-card p {
   color: #5C5047;
   line-height: 1.6;
@@ -322,36 +309,7 @@ img {
 }
 
 /* =========================
-   OUTRO (SHARED STYLE)
-========================= */
-.outro {
-  text-align: center;
-  margin-top: 70px;
-  padding: 60px 25px;
-
-  background: #E8DDCF;
-  border-radius: 16px;
-
-  max-width: 800px;
-  margin-left: auto;
-  margin-right: auto;
-
-  box-shadow: 0 8px 20px rgba(0,0,0,0.08);
-}
-/* =========================
-   CENTERED INTRO + OUTRO
-========================= */
-.page-intro,
-.quote,
-.outro {
-  text-align: center;
-  max-width: 800px;
-  margin: auto;
-  padding: 50px 20px;
-}
-
-/* =========================
-   POETRY ROW LAYOUT
+   POETRY TYPES PAGE
 ========================= */
 .poetry-list {
   max-width: 1000px;
@@ -362,7 +320,6 @@ img {
   gap: 40px;
 }
 
-/* each row */
 .poetry-row {
   display: flex;
   align-items: center;
@@ -375,7 +332,6 @@ img {
   box-shadow: 0 6px 15px rgba(0,0,0,0.08);
 }
 
-/* IMAGE LEFT SIDE */
 .poetry-row img {
   width: 220px;
   height: 160px;
@@ -383,24 +339,16 @@ img {
   border-radius: 12px;
 }
 
-/* TEXT RIGHT SIDE */
 .poetry-text {
   flex: 1;
 }
 
 .poetry-text h2 {
-  margin-bottom: 10px;
-  color: #4E3B31;
   font-family: "Playfair Display", serif;
 }
 
-.poetry-text p {
-  color: #5C5047;
-  line-height: 1.7;
-}
-
 /* =========================
-   MOBILE RESPONSIVE FIX
+   MOBILE
 ========================= */
 @media (max-width: 700px) {
   .poetry-row {
