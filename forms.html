@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Simply Spoken - Submit Form</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <!-- NAVIGATION (FIXED POSITION) -->
+  <nav class="navbar">
+    <div class="logo">Simply Spoken</div>
+
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="written.html">Written</a></li>
+      <li><a href="poetry.html">Poetry Types</a></li>
+      <li><a href="prompts.html">Prompts</a></li>
+      <li><a href="seen.html">Seen</a></li>
+      <li><a href="forms.html">Submit</a></li>
+    </ul>
+  </nav>
+
+  <!-- MAIN PAGE WRAPPER -->
+  <main class="form-page">
+
+    <!-- INTRO -->
+    <header class="page-header">
+      <h1>Share Your Voice</h1>
+      <p class="intro">
+        Poetry begins with expression.  
+        Submit your work and become part of Simply Spoken.
+      </p>
+    </header>
+
+    <!-- FORM -->
+    <form class="poetry-form">
+
+      <input type="text" placeholder="Full Name" required>
+
+      <input type="email" placeholder="Email Address" required>
+
+      <select required>
+        <option value="">Choose Poetry Type</option>
+        <option>Haiku</option>
+        <option>Sonnet</option>
+        <option>Free Verse</option>
+        <option>Limerick</option>
+      </select>
+
+      <textarea placeholder="Write your poem here..." required></textarea>
+
+      <button type="submit">Submit Poem</button>
+
+    </form>
+
+    <!-- OUTRO (EVERY PAGE STYLE) -->
+    <section class="outro">
+
+      <h2>Your Words Matter</h2>
+
+      <p>
+        Every submission becomes part of something larger.  
+        Keep writing, keep sharing, keep becoming.
+      </p>
+
+      <a href="seen.html" class="cta-btn">View Featured Poems</a>
+
+    </section>
+
+  </main>
+
+</body>
+</html>

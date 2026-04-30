@@ -1,0 +1,415 @@
+/* =========================
+   GLOBAL RESET
+========================= */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* =========================
+   BODY + BASE
+========================= */
+body {
+  font-family: Georgia, serif;
+  background-color: #FAF7F2;
+  color: #4E3B31;
+  line-height: 1.6;
+}
+
+/* =========================
+   NAVBAR
+========================= */
+.navbar {
+  background: #4E3B31;
+  padding: 15px 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  color: #E8DDCF;
+  font-size: 1.3rem;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+.nav-links a {
+  color: #E8DDCF;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.nav-links a:hover {
+  color: #A3B18A;
+}
+
+/* =========================
+   TYPOGRAPHY
+========================= */
+h1 {
+  font-size: 2.5rem;
+  color: #4E3B31;
+}
+
+h2 {
+  font-size: 1.4rem;
+  color: #A47148;
+  margin-bottom: 10px;
+}
+
+p {
+  color: #5C5047;
+  margin-bottom: 15px;
+  line-height: 1.7;
+}
+
+/* =========================
+   GRID SYSTEM
+========================= */
+.grid,
+.seen-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 25px;
+  margin-top: 30px;
+}
+
+/* =========================
+   CARDS (GLOBAL)
+========================= */
+.card,
+.seen-card,
+.feature-card {
+  background: #E8DDCF;
+  padding: 20px;
+  border-radius: 14px;
+  box-shadow: 0 6px 15px rgba(0,0,0,0.08);
+  transition: 0.3s ease;
+}
+
+.card:hover,
+.seen-card:hover,
+.feature-card:hover {
+  transform: translateY(-6px);
+}
+
+/* =========================
+   HERO (HOME)
+========================= */
+.hero {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1100px;
+  margin: auto;
+  padding: 60px 20px;
+  gap: 40px;
+}
+
+.hero-btn {
+  display: inline-block;
+  padding: 10px 18px;
+  background: #4E3B31;
+  color: #E8DDCF;
+  border-radius: 6px;
+  text-decoration: none;
+}
+
+.hero-btn:hover {
+  background: #A47148;
+}
+
+/* =========================
+   INTRO / OUTRO (HOME)
+========================= */
+.intro,
+.outro {
+  text-align: center;
+  max-width: 800px;
+  margin: auto;
+  padding: 50px 20px;
+}
+
+.outro {
+  background: #E8DDCF;
+  border-radius: 14px;
+}
+
+.cta-btn {
+  display: inline-block;
+  padding: 10px 18px;
+  background: #4E3B31;
+  color: #FAF7F2;
+  border-radius: 6px;
+  text-decoration: none;
+}
+
+.cta-btn:hover {
+  background: #A47148;
+}
+
+/* =========================
+   WRITTEN PAGE
+========================= */
+.written-page {
+  max-width: 850px;
+  margin: auto;
+  padding: 60px 20px;
+}
+
+.page-header {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.written-intro {
+  text-align: center;
+  max-width: 700px;
+  margin: 40px auto;
+}
+
+.poem-block {
+  background: #E8DDCF;
+  padding: 30px;
+  border-radius: 14px;
+  margin-bottom: 30px;
+  box-shadow: 0 6px 15px rgba(0,0,0,0.08);
+}
+
+.poem {
+  line-height: 1.8;
+}
+
+.date {
+  font-size: 0.85rem;
+  color: #6b5d54;
+}
+
+.note {
+  font-style: italic;
+  border-left: 3px solid #A47148;
+  padding-left: 10px;
+}
+
+/* WRITTEN OUTRO */
+.written-outro {
+  text-align: center;
+  margin-top: 70px;
+  padding: 60px 25px;
+  background: #E8DDCF;
+  border-radius: 16px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.08);
+}
+
+/* =========================
+   SEEN PAGE
+========================= */
+.seen-hero {
+  text-align: center;
+  padding: 70px 20px 40px;
+}
+
+.tag {
+  font-size: 0.8rem;
+  letter-spacing: 2px;
+  color: #A47148;
+  text-transform: uppercase;
+}
+
+.seen-card {
+  position: relative;
+}
+
+.seen-card::before {
+  content: "";
+  position: absolute;
+  top: 18px;
+  left: 20px;
+  width: 40px;
+  height: 3px;
+  background: #A47148;
+}
+
+/* SEEN OUTRO */
+.seen-outro {
+  text-align: center;
+  margin-top: 70px;
+  padding: 60px 25px;
+  background: #E8DDCF;
+  border-radius: 16px;
+  max-width: 800px;
+  margin: auto;
+}
+
+/* =========================
+   BASE IMAGE STYLE
+========================= */
+img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 12px;
+  display: block;
+}/* =========================
+   PROMPTS PAGE WRAPPER
+========================= */
+.prompts-page {
+  max-width: 1000px;
+  margin: auto;
+  padding: 60px 20px;
+  text-align: center;
+}
+
+/* =========================
+   PROMPT GRID
+========================= */
+.prompt-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 25px;
+  margin-top: 40px;
+}
+
+/* =========================
+   PROMPT CARDS
+========================= */
+.prompt-card {
+  background: #E8DDCF;
+  padding: 25px;
+  border-radius: 14px;
+
+  box-shadow: 0 6px 15px rgba(0,0,0,0.08);
+
+  transition: 0.3s ease;
+  text-align: left;
+
+  position: relative;
+}
+
+.prompt-card:hover {
+  transform: translateY(-6px);
+}
+
+/* accent line */
+.prompt-card::before {
+  content: "";
+  position: absolute;
+  top: 18px;
+  left: 20px;
+
+  width: 40px;
+  height: 3px;
+  background: #A47148;
+}
+
+/* title */
+.prompt-card h2 {
+  margin-top: 20px;
+  color: #4E3B31;
+  font-family: "Playfair Display", serif;
+}
+
+/* text */
+.prompt-card p {
+  color: #5C5047;
+  line-height: 1.6;
+  margin-top: 10px;
+}
+
+/* =========================
+   OUTRO (SHARED STYLE)
+========================= */
+.outro {
+  text-align: center;
+  margin-top: 70px;
+  padding: 60px 25px;
+
+  background: #E8DDCF;
+  border-radius: 16px;
+
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+
+  box-shadow: 0 8px 20px rgba(0,0,0,0.08);
+}
+/* =========================
+   CENTERED INTRO + OUTRO
+========================= */
+.page-intro,
+.quote,
+.outro {
+  text-align: center;
+  max-width: 800px;
+  margin: auto;
+  padding: 50px 20px;
+}
+
+/* =========================
+   POETRY ROW LAYOUT
+========================= */
+.poetry-list {
+  max-width: 1000px;
+  margin: auto;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+/* each row */
+.poetry-row {
+  display: flex;
+  align-items: center;
+  gap: 25px;
+
+  background: #E8DDCF;
+  padding: 20px;
+  border-radius: 14px;
+
+  box-shadow: 0 6px 15px rgba(0,0,0,0.08);
+}
+
+/* IMAGE LEFT SIDE */
+.poetry-row img {
+  width: 220px;
+  height: 160px;
+  object-fit: cover;
+  border-radius: 12px;
+}
+
+/* TEXT RIGHT SIDE */
+.poetry-text {
+  flex: 1;
+}
+
+.poetry-text h2 {
+  margin-bottom: 10px;
+  color: #4E3B31;
+  font-family: "Playfair Display", serif;
+}
+
+.poetry-text p {
+  color: #5C5047;
+  line-height: 1.7;
+}
+
+/* =========================
+   MOBILE RESPONSIVE FIX
+========================= */
+@media (max-width: 700px) {
+  .poetry-row {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .poetry-row img {
+    width: 100%;
+    height: 180px;
+  }
+}
